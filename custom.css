@@ -114,7 +114,7 @@ html, body{
     display: inline-block;
     margin-top: 15%;
     width: 90%;
-    border: 1px dashed rgb(36,176,201);
+    border: 1px dotted rgb(36,176,201);
 }
 
 .rect{
@@ -164,18 +164,19 @@ html, body{
 
 @media screen
     and (max-width : 500px){
+        
         #l1content img{
             width: 100%;
         }
         
         #l1content h1{
             font-size: 30px;
-            margin-bottom: 90px;
+            margin-bottom: 50px;
             padding: 10px;
         }
         
         #l2content{
-            margin-top: 30%; 
+            margin-top: 100px;
         }
         
         .rect{
@@ -188,15 +189,18 @@ html, body{
         }
         
         .rect h1{
+            padding: 0px 5px;
             font-family: avanb;
             color: darkslategrey;
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 20px;
         }
 
         .rect p{
+            padding: 0px 5px;
             font-family: avanm;
             margin-top: 10px;
+            height: 60px;
             font-size: 10px;
         }
 
