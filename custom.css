@@ -1,0 +1,204 @@
+@font-face {
+font-family: "avanl";
+src: url("fonts/AVANGELI.TTF");
+}
+
+@font-face {
+font-family: "avanm";
+src: url("fonts/AVANGMI_.TTF");
+}
+
+@font-face {
+font-family: "avanb";
+src: url("fonts/AVANGID_.TTF");
+}
+
+.icon-bar{
+    background-color: darkslategrey;
+}
+
+.container{
+    background-color: white;
+}
+
+.navbar-brand{
+    font-family: avanm;
+    color: darkslategrey;
+    font-size: 25px;
+}
+
+.navbar-brand:hover{
+    color: rgb(36,176,201);
+}
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav a{
+    color: darkslategrey;
+    font-family: avanm;
+    font-size: 16px;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    background-color: white;
+    overflow: hidden;
+}
+
+#layer1{
+    z-index: 6;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background: linear-gradient(to bottom left,black,rgba(0,91,127,1));
+    text-align: center;
+}
+
+/*::-webkit-scrollbar { 
+    display: none; 
+}*/
+
+#l1content{
+    margin-top: 100px;
+}
+
+#l1content h1{
+    color: white;
+    font-family:avanl;
+    font-size: 40px;
+}
+
+#l1content img {
+    width: 60%;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    animation: myScale 1s infinite;
+}
+
+.scroll-down:hover{
+    animation: none;
+}
+
+.scroll-down img{
+    width: 40px;
+}
+
+.scroll-up {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+
+.scroll-up img{
+    width: 40px;
+}
+
+#layer2{
+    z-index: 5;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background:  linear-gradient(to bottom left,rgb(36,176,201),white);
+    text-align: center;
+}
+
+#l2content{
+    display: inline-block;
+    margin-top: 15%;
+    width: 90%;
+    border: 1px dashed rgb(36,176,201);
+}
+
+.rect{
+    width: 25%;
+    float: left;
+}
+
+.rect:hover{
+    background-color: rgba(256,256,256,0.2);
+}
+
+.rect img{
+    height: 100px;
+}
+
+.rect h1{
+    font-family: avanb;
+    font-size: 30px;
+    color: darkslategrey;
+    margin-top: 40px;
+    height: 40px;
+}
+
+.rect p{
+    font-family: avanm;
+    margin-top: 20px;
+    height: 100px;
+}
+
+#layer3{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    background-color: red;
+    z-index: 4;
+    text-align: center;
+}
+
+@keyframes myScale{
+    0% {bottom: 0px;}
+    35% {bottom: 15px}
+    70% {bottom: 0px;}
+    85%{bottom: 7.5px;}
+    100%{bottom: 0px;}
+}
+
+@media screen
+    and (max-width : 500px){
+        #l1content img{
+            width: 100%;
+        }
+        
+        #l1content h1{
+            font-size: 30px;
+            margin-bottom: 90px;
+            padding: 10px;
+        }
+        
+        #l2content{
+            margin-top: 30%; 
+        }
+        
+        .rect{
+            width: 50%;
+            float: left;
+        }
+        
+        .rect img{
+            height: 50px;
+        }
+        
+        .rect h1{
+            font-family: avanb;
+            color: darkslategrey;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .rect p{
+            font-family: avanm;
+            margin-top: 10px;
+            font-size: 10px;
+        }
+
+        
+}
