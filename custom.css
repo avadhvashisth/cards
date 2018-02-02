@@ -39,6 +39,7 @@ src: url("fonts/AVANGID_.TTF");
     font-family: avanm;
     font-size: 16px;
 }
+
 html, body{
     width: 100%;
     height: 100%;
@@ -106,7 +107,7 @@ html, body{
     height: 100%;
     width: 100%;
     margin: 0px;
-    background:  linear-gradient(to bottom left,rgb(36,176,201),white);
+    background: linear-gradient(to bottom left,rgb(36,176,201),white);
     text-align: center;
 }
 
@@ -115,6 +116,17 @@ html, body{
     margin-top: 15%;
     width: 90%;
     border: 1px dotted rgb(36,176,201);
+}
+#mobile{
+    border-right:1px dotted rgb(36,176,201);
+}
+
+#user{
+    border-right:1px dotted rgb(36,176,201);
+}
+
+#fast{
+    border-right:1px dotted rgb(36,176,201);
 }
 
 .rect{
@@ -136,12 +148,14 @@ html, body{
     color: darkslategrey;
     margin-top: 40px;
     height: 40px;
+    padding: 0px 5px;
 }
 
 .rect p{
     font-family: avanm;
     margin-top: 20px;
     height: 100px;
+    padding: 0px 5px;
 }
 
 #layer3{
@@ -179,6 +193,22 @@ html, body{
             margin-top: 100px;
         }
         
+        #mobile{
+            border-right:1px dotted rgb(36,176,201);
+        }
+
+        #user{
+            border-bottom:0px;
+        }
+
+        #fast{
+            border-top:1px dotted rgb(36,176,201);
+        }
+        
+        #nav{
+             border-top:1px dotted rgb(36,176,201);
+        }
+        
         .rect{
             width: 50%;
             float: left;
@@ -189,7 +219,6 @@ html, body{
         }
         
         .rect h1{
-            padding: 0px 5px;
             font-family: avanb;
             color: darkslategrey;
             margin-top: 10px;
@@ -197,7 +226,6 @@ html, body{
         }
 
         .rect p{
-            padding: 0px 5px;
             font-family: avanm;
             margin-top: 10px;
             height: 60px;
